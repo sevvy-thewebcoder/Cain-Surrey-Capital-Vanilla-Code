@@ -1,0 +1,64 @@
+/* VARIABLES */
+
+:root {
+  
+    /* Typography */
+
+  --FF-LATO: 'Lato', sans-serif;
+  --FS-H1: 6rem;
+  --FS-H2: 4.8rem;
+  --FS-H3: 3rem;
+  --FS-H4: 2.4rem;
+  --FS-H5: 1.4rem;
+  --FS-BODY: 1.6rem;
+  --FS-TEXT: 1.6rem;
+  --FS-LOGO: 1.6rem;
+  --FS-NAVLINKS: 1.4rem;
+  --FS-COPYRIGHT: 1.2rem;
+  --FS-FOOTERLINK: 1.2rem;
+  --FS-FOOTERLINK-TITLE: 1.4rem;
+
+  --FW-H1: 400;
+  --FW-H2: 400;
+  --FW-H3: 400;
+  --FW-H4: 400;
+  --FW-H5: 400;
+  --FW-BODY: 400;
+  --FW-TEXT: 400;
+  --FW-LOGO: 600;
+  --FW-NAVLINKS: 400;
+  --FW-COPYRIGHT: 400;
+  --FW-FOOTERLINK: 400;
+  --FW-FOOTERLINK-TITLE: 700;
+
+  --LH-REGULAR: 1.2;
+  --LH-MEDIUM: 1.6;
+
+  /* Colors */
+
+  --BGCOLOR-DEFAULT: rgba(255, 255, 255, 1);
+  --BGCOLOR-PRIMARY: rgba(237, 241, 242, 1);
+  --BGCOLOR-SECONDARY: rgba(3, 31, 40, 1);
+  --BGCOLOR-TRANSPARENT: transparent;
+  
+  --TEXTCOLOR-SECONDARY: rgba(255, 255, 255, 1);
+  --TEXTCOLOR-PRIMARY: rgba(237, 241, 242, 1);
+  --TEXTCOLOR-DEFAULT: rgba(3, 31, 40, 1);
+
+  /* Utils */
+
+  --MAXWIDTH-LAYOUT-CONTAINER: 1080px;
+  --MAXWIDTH-HERO-DESCRIPTION: 600px;
+
+  --BORDER-RADIUS-SMALL: 5PX;
+
+  /* Spacing */
+
+  --GAP-LARGE: 8rem;
+  --PADDING-BLOCK-CARD: 6rem;
+  --PADDING-INLINE-CARD: 3.6rem;
+  --PADDING-BLOCK-HEADER: 2.5rem;
+  --PADDING-BLOCK-LARGE: 8rem;
+
+  --BORDER-CARD-LIGHT: 1px solid rgba(255, 255, 255, 0.2);
+}
