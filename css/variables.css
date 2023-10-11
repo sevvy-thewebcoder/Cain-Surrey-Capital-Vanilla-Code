@@ -1,14 +1,24 @@
 /* VARIABLES */
 
 :root {
+
+  /* Layouts */
+
+  --NAVBAR-SCREEN-MOBILE: block;
+  --NAVBAR-SCREEN-LARGE: none;
+
+  --GRID-LAYOUT-FEATURE01: repeat(1, 1fr);
+  --GRID-LAYOUT-FEATURE02: repeat(1, 1fr);
+  --GRID-LAYOUT-ABOUT: repeat(1, 1fr);
   
     /* Typography */
 
   --FF-LATO: 'Lato', sans-serif;
-  --FS-H1: 6rem;
-  --FS-H2: 4.8rem;
-  --FS-H3: 3rem;
-  --FS-H4: 2.4rem;
+  --FS-H1: clamp(2.8rem, 9vw, 3.5rem);
+  /* --FS-H1: 3rem; */
+  --FS-H2: 2.7rem;
+  --FS-H3: 2.4rem;
+  --FS-H4: 2rem;
   --FS-H5: 1.4rem;
   --FS-BODY: 1.6rem;
   --FS-TEXT: 1.6rem;
@@ -32,7 +42,7 @@
   --FW-FOOTERLINK-TITLE: 700;
 
   --LH-REGULAR: 1.2;
-  --LH-MEDIUM: 1.6;
+  --LH-MEDIUM: 1.8;
 
   /* Colors */
 
@@ -47,18 +57,148 @@
 
   /* Utils */
 
+  --BORDER-RADIUS-SMALL: 5PX;
+
+  /* Lengths */
+
+  --WIDTH-IMAGE-HERO: 100%;
   --MAXWIDTH-LAYOUT-CONTAINER: 1080px;
   --MAXWIDTH-HERO-DESCRIPTION: 600px;
 
-  --BORDER-RADIUS-SMALL: 5PX;
+
+  /* Alignments */
+
+  /* --TEXT-ALIGNMENT-H1-P2: center;
+  --TEXT-ALIGNMENT-H1-P3: end; */
+  
 
   /* Spacing */
 
-  --GAP-LARGE: 8rem;
+  --GAP-LARGE: 5rem;
   --PADDING-BLOCK-CARD: 6rem;
   --PADDING-INLINE-CARD: 3.6rem;
   --PADDING-BLOCK-HEADER: 2.5rem;
-  --PADDING-BLOCK-LARGE: 8rem;
+  --PADDING-BLOCK-LARGE: 6rem;
 
   --BORDER-CARD-LIGHT: 1px solid rgba(255, 255, 255, 0.2);
+  --BORDER-CARD-DARK: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (min-width: 768px) {
+  :root {
+
+    /* Layouts */
+
+    --GRID-LAYOUT-FEATURE01: repeat(2, 1fr);
+    --GRID-LAYOUT-FEATURE02: repeat(2, 1fr);
+    --GRID-LAYOUT-ABOUT: repeat(2, 1fr);
+    
+    /* Typography */
+  
+    --FS-H1: 6rem;
+    --FS-H2: 4.8rem;
+    --FS-H3: 3rem;
+    --FS-H4: 2.4rem;
+    --FS-H5: 1.4rem;
+    --FS-BODY: 1.6rem;
+    --FS-TEXT: 1.6rem;
+    --FS-LOGO: 1.6rem;
+    --FS-NAVLINKS: 1.4rem;
+    --FS-COPYRIGHT: 1.2rem;
+    --FS-FOOTERLINK: 1.2rem;
+    --FS-FOOTERLINK-TITLE: 1.4rem;
+  
+    --LH-REGULAR: 1.2;
+    --LH-MEDIUM: 1.8;
+  
+    /* Colors */
+  
+    --BGCOLOR-DEFAULT: rgba(255, 255, 255, 1);
+    --BGCOLOR-PRIMARY: rgba(237, 241, 242, 1);
+    --BGCOLOR-SECONDARY: rgba(3, 31, 40, 1);
+    --BGCOLOR-TRANSPARENT: transparent;
+    
+    --TEXTCOLOR-SECONDARY: rgba(255, 255, 255, 1);
+    --TEXTCOLOR-PRIMARY: rgba(237, 241, 242, 1);
+    --TEXTCOLOR-DEFAULT: rgba(3, 31, 40, 1);
+  
+    /* Utils */
+  
+
+    /* Alignments */
+
+    --TEXT-ALIGNMENT-H1-P2: center;
+    --TEXT-ALIGNMENT-H1-P3: end;
+  
+    /* Spacing */
+  
+    --GAP-LARGE: 8rem;
+    --PADDING-BLOCK-CARD: 6rem;
+    --PADDING-INLINE-CARD: 3.6rem;
+    --PADDING-BLOCK-HEADER: 2.5rem;
+    --PADDING-BLOCK-LARGE: 8rem;
+  
+    --BORDER-CARD-LIGHT: 1px solid rgba(255, 255, 255, 0.2);
+    --BORDER-CARD-DARK: 1px solid rgba(0, 0, 0, 0.2);
+  }
+}
+@media screen and (min-width: 1080px) {
+  :root {
+
+    /* Layouts */
+
+    --NAVBAR-SCREEN-MOBILE: none;
+    --NAVBAR-SCREEN-LARGE: block;
+    --GRID-LAYOUT-FEATURE02: repeat(3, 1fr);
+    
+      /* Typography */
+  
+    --FS-H1: 6rem;
+    --FS-H2: 4.8rem;
+    --FS-H3: 3rem;
+    --FS-H4: 2.4rem;
+    --FS-H5: 1.4rem;
+    --FS-BODY: 1.6rem;
+    --FS-TEXT: 1.6rem;
+    --FS-LOGO: 1.6rem;
+    --FS-NAVLINKS: 1.4rem;
+    --FS-COPYRIGHT: 1.2rem;
+    --FS-FOOTERLINK: 1.2rem;
+    --FS-FOOTERLINK-TITLE: 1.4rem;
+  
+    --LH-REGULAR: 1.2;
+    --LH-MEDIUM: 1.8;
+  
+    /* Colors */
+  
+    --BGCOLOR-DEFAULT: rgba(255, 255, 255, 1);
+    --BGCOLOR-PRIMARY: rgba(237, 241, 242, 1);
+    --BGCOLOR-SECONDARY: rgba(3, 31, 40, 1);
+    --BGCOLOR-TRANSPARENT: transparent;
+    
+    --TEXTCOLOR-SECONDARY: rgba(255, 255, 255, 1);
+    --TEXTCOLOR-PRIMARY: rgba(237, 241, 242, 1);
+    --TEXTCOLOR-DEFAULT: rgba(3, 31, 40, 1);
+  
+    /* Lengths */
+    
+    --WIDTH-IMAGE-HERO: 85%;
+    
+    /* Utils */
+
+    /* Alignments */
+
+    --ALIGN-SELF-HERO-IMAGE: self-end;
+
+    /* Spacing */
+  
+    --GAP-LARGE: 8rem;
+    --PADDING-BLOCK-CARD: 6rem;
+    --PADDING-INLINE-CARD: 3.6rem;
+    --PADDING-BLOCK-HEADER: 2.5rem;
+    --PADDING-BLOCK-LARGE: 8rem;
+  
+    --BORDER-CARD-LIGHT: 1px solid rgba(255, 255, 255, 0.2);
+    --BORDER-CARD-DARK: 1px solid rgba(0, 0, 0, 0.2);
+  }
 }

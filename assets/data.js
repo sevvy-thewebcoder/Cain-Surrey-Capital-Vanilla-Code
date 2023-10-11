@@ -32,7 +32,9 @@ const headerNavLinks = [
   },
 ]
 
-// 02 HERO SECTION
+// 02 MAIN CONTENT SECTION
+
+// 02.01 HERO SECTION
 
 const heroSectionTitle = [
     {
@@ -51,6 +53,8 @@ const heroSectionTitle = [
     }
 
 ]
+
+// 02.02 FEATURES SECTION - 01
 
 const featureSection01 = [
   {
@@ -96,6 +100,7 @@ const featureSection01 = [
   },
 ]
 
+// 02.03 FEATURES SECTION - 02
 
 const featureSection02 = {
   sectionTitle: "The Cain-Surrey Difference",
@@ -130,8 +135,24 @@ const featureSection02 = {
   ]
 };
 
+// 02.04 ABOUT US SECTION
+
+const aboutUsSection = {
+  subtitle: "Your Financial Partner",
+  title: "Meet Christina",
+  desc: `
+    Cras semper auctor neque vitae tempus.
+    Neque volutpat ac tincidunt vitae.
+    Eros donec ac odio tempor orci dapibus ultrices.
+    Eget mauris pharetra et ultrices neque ornare.
+    Metus aliquam eleifend mi in nulla posuere
+    sollicitudin aliquam. Nunc id cursus metus
+    aliquam eleifend mi.
+  `
+}
+
 //   heroImg: heroImg,
 
 //   aboutImg: aboutImg,
 
-export { headerNavLinks, heroSectionTitle, featureSection01, featureSection02 };
+export { headerNavLinks, heroSectionTitle, featureSection01, featureSection02, aboutUsSection };

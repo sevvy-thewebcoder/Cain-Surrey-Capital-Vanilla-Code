@@ -26,6 +26,10 @@
     object-fit: cover;
 }
 
+.navbar {
+    display: var(--NAVBAR-SCREEN-LARGE);
+}
+
 .nav__list {
     display: flex;
     gap: 2.5rem;
@@ -58,20 +62,19 @@
 }
 
 .hero__title > .hero__title_02 {
-    text-align: center;
+    text-align: var(--TEXT-ALIGNMENT-H1-P2);
 }
 
 .hero__title > .hero__title_03 {
-    text-align: end;
+    text-align: var(--TEXT-ALIGNMENT-H1-P3);
 }
 
 .hero__image_wrapper {
-    width: 85%;
+    width: var(--WIDTH-IMAGE-HERO);
     height: 100%;
-    align-self: self-end;
+    align-self: var(--ALIGN-SELF-HERO-IMAGE);
     max-height: 700px;
     display: flex;
-    margin-left: auto;
     border-radius: 5px;
     background-color: #fff;
     overflow: hidden;
@@ -106,7 +109,7 @@
 
 .feature__list_01 {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: var(--GRID-LAYOUT-FEATURE01);
     gap: 4rem;
 }
 
@@ -114,7 +117,11 @@
     position: relative;
     display: flex;
     gap: 2.5rem;
-    padding-inline: var(--PADDING-INLINE-CARD);
+    border-top: var(--BORDER-CARD-DARK);
+    border-right: var(--BORDER-CARD-DARK);
+    border-bottom: var(--BORDER-CARD-DARK);
+    border-radius: 0 var(--BORDER-RADIUS-SMALL) var(--BORDER-RADIUS-SMALL) 0;
+    padding: var(--PADDING-INLINE-CARD) var(--PADDING-INLINE-CARD) var(--PADDING-INLINE-CARD) 0;
 }
 
 .feature__list_01 .list__item .index {
@@ -136,14 +143,9 @@
     gap: 3rem;
 }
 
-.features__section_02 .title__wrapper {
-    display: flex;
-    gap: 2rem;
-}
-
 .feature__list_02 {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: var(--GRID-LAYOUT-FEATURE02);
     gap: 2rem;
 }
 
@@ -154,4 +156,40 @@
 
 /* 02.04 ABOUT US SECTION */
 
+.about__section {
+    background-color: var(--BGCOLOR-TRANSPARENT);
+}
+
+.about__container {
+    display: grid;
+    grid-template-columns: var(--GRID-LAYOUT-ABOUT);
+    gap: 5rem;
+}
+
+.about__section .about__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.about__section .image__wrapper {
+    width: 100%;
+    height: 100%;
+    max-height: 550px;
+    overflow: hidden;
+    border-radius: var(--BORDER-RADIUS-SMALL);
+}
+
+.about__section .profile__image {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: var(--BORDER-RADIUS-SMALL);
+}
+
 /* 03 FOOTER SECTION */
+
+.footer {
+    background-color: var(--BGCOLOR-PRIMARY);
+}
