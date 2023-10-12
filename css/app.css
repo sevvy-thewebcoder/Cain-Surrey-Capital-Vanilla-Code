@@ -6,7 +6,13 @@
 /* 01 HEADER SECTION */
 
 .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
     background-color: var(--BGCOLOR-PRIMARY);
+    z-index: 1000;
 }
 
 .header > .container {
@@ -35,8 +41,41 @@
     gap: 2.5rem;
 }
 
-.nav__list > li {
+/* .nav__list > li {
     all: unset;
+} */
+
+.navbar__mobile {
+    position: fixed;
+    z-index: 100;
+    top: 73.78px;
+    right: -110%;
+    min-height: 100dvh;
+    background-color: var(--BGCOLOR-SECONDARY);
+    color: var(--TEXTCOLOR-SECONDARY);
+}
+
+.active__mobile_navbar {
+    display: grid;
+    width: 100%;
+    right: 0;
+    transition: right 0.3s ease-in-out;
+}
+
+.navbar__mobile > .container {
+    width: max-content;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.navbar__mobile .nav__list_mobile {
+    flex-direction: column;
+    /* gap: 4rem; */
+}
+
+.nav__list_mobile .nav__link {
+    font-size: var(--FS-H4);
 }
 
 
@@ -45,6 +84,7 @@
 /* 02.01 HERO SECTION */
 
 .hero__section {
+    position: relative;
     display: flex;
     flex-direction: column;
     gap: var(--GAP-LARGE);
@@ -70,7 +110,7 @@
 }
 
 .hero__image_wrapper {
-    width: var(--WIDTH-IMAGE-HERO);
+    /* width: var(--WIDTH-IMAGE-HERO); */
     height: 100%;
     align-self: var(--ALIGN-SELF-HERO-IMAGE);
     max-height: 700px;

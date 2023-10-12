@@ -1,9 +1,15 @@
+import './functions.js'
 import { headerNavLinks, heroSectionTitle, featureSection01, featureSection02, aboutUsSection } from '../assets/data.js';
+import { getDynamicHeaderHeight, getDynamicHeroSize } from './functions.js';
+
+// const header = document.getElementById( 'header' );
 const hamburgerMenuEl = document.getElementById( 'hamburger__menu' );
-const topBarEl = document.getElementById( 'top__bar' );
-const middleBarEl = document.getElementById( 'middle__bar' );
-const bottomBarEl = document.getElementById( 'bottom__bar' );
+const navbarMobileEl = document.getElementById( 'navbar__mobile' );
+// const topBarEl = document.getElementById( 'top__bar' );
+// const middleBarEl = document.getElementById( 'middle__bar' );
+// const bottomBarEl = document.getElementById( 'bottom__bar' );
 const navListEl = document.getElementById( 'nav__list' );
+const navListMobileEl = document.getElementById( 'nav__list_mobile' );
 const heroTitleEl = document.getElementById( 'hero__title' );
 const featureListEl01 = document.getElementById( 'feature__list_01' );
 const featureListEl02 = document.getElementById( 'feature__list_02' );
@@ -21,12 +27,30 @@ function toggleMenu () {
 
     if ( isMobileNavActive ) {
         hamburgerMenuEl.classList.add( 'active__mobile_menu' );
+        navbarMobileEl.classList.add( 'active__mobile_navbar' );
     } else {
         hamburgerMenuEl.classList.remove( 'active__mobile_menu' );
+        navbarMobileEl.classList.remove( 'active__mobile_navbar' );
     }
-    console.log(isMobileNavActive)
+    console.log(isMobileNavActive)   
+}   
+
+
+window.onresize = displayWindowSize;
+
+function displayWindowSize () {
+    let currentWidth = window.innerWidth;
     
-}
+    if (currentWidth >= 1080) {
+        isMobileNavActive = false;
+        hamburgerMenuEl.classList.remove( 'active__mobile_menu' );
+        navbarMobileEl.classList.remove( 'active__mobile_navbar' );
+    }
+
+};
+
+window.onresize = getDynamicHeaderHeight;
+window.onresize = getDynamicHeroSize;
 
 // 01.02 HEADER NAV LINKS
 
@@ -40,6 +64,7 @@ const headerNavLinkElements = headerNavLinks.map( ( link ) => (
 ).join( '' );
 
 navListEl.innerHTML = headerNavLinkElements;
+navListMobileEl.innerHTML = headerNavLinkElements;
 
 
 // 02 MAIN CONTENT SECTION

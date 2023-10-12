@@ -9,9 +9,13 @@
     padding-inline: 1rem;
 }
 
+.mobile__navIcon_wrapper {
+    display: var(--NAVBAR-SCREEN-MOBILE);
+}
+
 .hamburger__menu {
-    width: 3.5rem;
-    height: 3.5rem;
+    width: 3.4rem;
+    height: 3.4rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -28,25 +32,31 @@
 }
 
 .active__mobile_menu {
-    display: block;
+    position: relative;
+    align-items: center;
+    justify-content: center;
 }
 
 .active__mobile_menu > .bar {
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    width: 50%;
 }
 
 .active__mobile_menu > .top__bar {
-    /* transform: rotate(45deg) translate(-0%, 150%); */
+    transform: rotate(45deg);
+    transition: transform 0.3s ease-in-out;
 }
 .active__mobile_menu > .middle__bar {
     display: none;
 }
 .active__mobile_menu > .bottom__bar {
-    /* transform: rotate(-45deg) translate(-50%, -50%); */
-
+    transform: rotate(-45deg);
+    transition: transform 0.3s ease-in-out;
 }
 
 .feature__card {
