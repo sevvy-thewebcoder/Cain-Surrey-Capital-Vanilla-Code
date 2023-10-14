@@ -61,6 +61,7 @@
 .hamburger__menu:focus,
 .hamburger__menu:active {
     background-color: var(--BGCOLOR-HAMBURGER);
+    -webkit-tap-highlight-color: transparent;
 }
 
 .hamburger__menu:hover .bar,

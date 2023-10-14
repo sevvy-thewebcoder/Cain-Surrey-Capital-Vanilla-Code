@@ -31,6 +31,7 @@ body {
 a {
     all: unset;
     font-family: var(--FF-LATO);
+    -webkit-tap-highlight-color: transparent;
     cursor: pointer;
 }
 
