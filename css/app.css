@@ -57,11 +57,15 @@
     border-bottom: var(--BORDER-CARD-DARK);
 }
 
-.hamburger__menu:hover {
+.hamburger__menu:hover,
+.hamburger__menu:focus,
+.hamburger__menu:active {
     background-color: var(--BGCOLOR-HAMBURGER);
 }
 
-.hamburger__menu:hover .bar {
+.hamburger__menu:hover .bar,
+.hamburger__menu:focus .bar,
+.hamburger__menu:active .bar {
     background-color: var(--BGCOLOR-PRIMARY);
 }
 
