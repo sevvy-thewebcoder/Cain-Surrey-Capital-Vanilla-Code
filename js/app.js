@@ -1,5 +1,5 @@
 import './functions.js'
-import { headerNavLinks, heroSectionTitle, featureSection01, featureSection02, aboutUsSection } from '../assets/data.js';
+import { headerNavLinks, heroSectionTitle, featureSection01, featureSection02, aboutUsSection, footerSectionLinks } from '../assets/data.js';
 import { getDynamicHeaderHeight, getDynamicHeroSize } from './functions.js';
 
 // const header = document.getElementById( 'header' );
@@ -14,6 +14,7 @@ const heroTitleEl = document.getElementById( 'hero__title' );
 const featureListEl01 = document.getElementById( 'feature__list_01' );
 const featureListEl02 = document.getElementById( 'feature__list_02' );
 const aboutCardContentEl = document.getElementById( 'about__card' );
+const footerLinksWrapperEl = document.getElementById( 'footer__links_wrapper' );
 
 // 01.01 HEADER MENU
 
@@ -128,3 +129,25 @@ const aboutUsCardContentElement = `
 `;
 
 aboutCardContentEl.innerHTML = aboutUsCardContentElement;
+
+// 03 FOOTER SECTION
+
+const footerLinkElements = footerSectionLinks.map( ( item ) => (
+    `
+        <div class="col">
+            <h5 class="footer__link_title">${ item.linkHeading }</h5>
+            <ul class="footer__links">
+                ${ item.links.map( ( link ) => (
+                    `
+                        <li>
+                            <a class="footer__link" href="${link.linkUrl}">${link.linkTitle}</a>
+                        </li>
+                    `
+                    
+                ) ).join( '' ) }
+            </ul>
+        </div>
+    `
+) ).join( '' );
+
+footerLinksWrapperEl.innerHTML = footerLinkElements;

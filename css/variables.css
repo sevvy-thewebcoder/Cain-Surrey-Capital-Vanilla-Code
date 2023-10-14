@@ -10,12 +10,16 @@
   --GRID-LAYOUT-FEATURE01: repeat(1, 1fr);
   --GRID-LAYOUT-FEATURE02: repeat(1, 1fr);
   --GRID-LAYOUT-ABOUT: repeat(1, 1fr);
+  --GRID-LAYOUT-FOOTER-LINKS: repeat(auto-fit, minmax(126px, 1fr));
+
+  --FLEX-DIRECTION-FOOTER-TOP: column;
+  --FLEX-DIRECTION-FOOTER-LINKCOL: row;
+  --FLEX-DIRECTION-FOOTER-COPYRIGHT: column;
   
     /* Typography */
 
   --FF-LATO: 'Lato', sans-serif;
   --FS-H1: clamp(2.8rem, 9vw, 3.5rem);
-  /* --FS-H1: 3rem; */
   --FS-H2: 2.7rem;
   --FS-H3: 2.4rem;
   --FS-H4: 2rem;
@@ -25,8 +29,8 @@
   --FS-LOGO: 1.6rem;
   --FS-NAVLINKS: 1.4rem;
   --FS-COPYRIGHT: 1.2rem;
-  --FS-FOOTERLINK: 1.2rem;
-  --FS-FOOTERLINK-TITLE: 1.4rem;
+  --FS-FOOTERLINK: 1.4rem;
+  --FS-FOOTERLINK-TITLE: 1.6rem;
 
   --FW-H1: 400;
   --FW-H2: 400;
@@ -49,6 +53,7 @@
   --BGCOLOR-DEFAULT: rgba(255, 255, 255, 1);
   --BGCOLOR-PRIMARY: rgba(237, 241, 242, 1);
   --BGCOLOR-SECONDARY: rgba(3, 31, 40, 1);
+  --BGCOLOR-HAMBURGER: rgba(3, 31, 40, 0.8);
   --BGCOLOR-TRANSPARENT: transparent;
   
   --TEXTCOLOR-SECONDARY: rgba(255, 255, 255, 1);
@@ -64,12 +69,13 @@
   --WIDTH-IMAGE-HERO: 100%;
   --MAXWIDTH-LAYOUT-CONTAINER: 1080px;
   --MAXWIDTH-HERO-DESCRIPTION: 600px;
+  --MAX-WIDTH-FOOTER-LOGO-COL: 460px;
+  --MAX-WIDTH-FOOTER-LINKS-COL: 100%;
 
 
   /* Alignments */
 
-  /* --TEXT-ALIGNMENT-H1-P2: center;
-  --TEXT-ALIGNMENT-H1-P3: end; */
+  --GRID-JUSTIFY-ITEMS: flex-start;
   
 
   /* Spacing */
@@ -92,7 +98,11 @@
     --GRID-LAYOUT-FEATURE01: repeat(2, 1fr);
     --GRID-LAYOUT-FEATURE02: repeat(2, 1fr);
     --GRID-LAYOUT-ABOUT: repeat(2, 1fr);
-    
+    --GRID-LAYOUT-FOOTER-LINKS: repeat(2, minmax(126px, 1fr));
+
+    --FLEX-DIRECTION-FOOTER-TOP: row;
+    --FLEX-DIRECTION-FOOTER-COPYRIGHT: row;
+
     /* Typography */
   
     --FS-H1: 6rem;
@@ -105,8 +115,8 @@
     --FS-LOGO: 1.6rem;
     --FS-NAVLINKS: 1.4rem;
     --FS-COPYRIGHT: 1.2rem;
-    --FS-FOOTERLINK: 1.2rem;
-    --FS-FOOTERLINK-TITLE: 1.4rem;
+    /* --FS-FOOTERLINK: 1.4rem;
+    --FS-FOOTERLINK-TITLE: 1.6rem; */
   
     --LH-REGULAR: 1.2;
     --LH-MEDIUM: 1.8;
@@ -123,12 +133,20 @@
     --TEXTCOLOR-DEFAULT: rgba(3, 31, 40, 1);
   
     /* Utils */
-  
+
+
+    /* Lengths */
+
+    --MAX-WIDTH-FOOTER-LOGO-COL: 300px;
+    --MAX-WIDTH-FOOTER-LINKS-COL: 500px;
+
 
     /* Alignments */
 
     --TEXT-ALIGNMENT-H1-P2: center;
     --TEXT-ALIGNMENT-H1-P3: end;
+
+    --GRID-JUSTIFY-ITEMS: flex-end;
   
     /* Spacing */
   
@@ -151,6 +169,9 @@
     --NAVBAR-SCREEN-LARGE: block;
     --GRID-LAYOUT-FEATURE02: repeat(3, 1fr);
     
+    /* --GRID-LAYOUT-FOOTER-LINKS: repeat(4, auto); */
+    --GRID-LAYOUT-FOOTER-LINKS: repeat(4, minmax(126px, auto));
+    
       /* Typography */
   
     --FS-H1: 6rem;
@@ -163,8 +184,8 @@
     --FS-LOGO: 1.6rem;
     --FS-NAVLINKS: 1.4rem;
     --FS-COPYRIGHT: 1.2rem;
-    --FS-FOOTERLINK: 1.2rem;
-    --FS-FOOTERLINK-TITLE: 1.4rem;
+    /* --FS-FOOTERLINK: 1.2rem;
+    --FS-FOOTERLINK-TITLE: 1.4rem; */
   
     --LH-REGULAR: 1.2;
     --LH-MEDIUM: 1.8;
@@ -183,6 +204,8 @@
     /* Lengths */
     
     --WIDTH-IMAGE-HERO: 85%;
+    --MAX-WIDTH-FOOTER-LOGO-COL: 350px;
+    --MAX-WIDTH-FOOTER-LINKS-COL: 700px;
     
     /* Utils */
 

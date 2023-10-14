@@ -30,6 +30,7 @@ body {
 
 a {
     all: unset;
+    font-family: var(--FF-LATO);
     cursor: pointer;
 }
 

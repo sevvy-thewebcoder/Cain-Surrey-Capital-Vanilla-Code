@@ -7,22 +7,22 @@
 const headerNavLinks = [
   {
     linkUrl: '/',
+    linkTitle: 'Home',
+    className: 'nav__link',
+  },
+  {
+    linkUrl: '/',
     linkTitle: 'About Us',
     className: 'nav__link',
   },
   {
     linkUrl: '/',
-    linkTitle: 'Business',
+    linkTitle: 'Features',
     className: 'nav__link',
   },
   {
     linkUrl: '/',
     linkTitle: 'People',
-    className: 'nav__link',
-  },
-  {
-    linkUrl: '/',
-    linkTitle: 'Impact',
     className: 'nav__link',
   },
   {
@@ -151,8 +151,97 @@ const aboutUsSection = {
   `
 }
 
-//   heroImg: heroImg,
+// 03 FOOTER SECTION
 
-//   aboutImg: aboutImg,
+const footerSectionLinks = [
+  {
+    linkHeading: "Company",
+    links: [
+      {
+        linkTitle: "About Cain-Surrey",
+        linkUrl: "/",
+      },
+      {
+        linkTitle: "Our Values",
+        linkUrl: "/",
+      },
+      {
+        linkTitle: "Our History",
+        linkUrl: "/",
+      },
+      {
+        linkTitle: "By the Numbers",
+        linkUrl: "/",
+      },
+    ]
+  },
+  {
+    linkHeading: "Business",
+    links: [
+      {
+        linkTitle: "Private Equity",
+        linkUrl: "/",
+      },
+      {
+        linkTitle: "Credit",
+        linkUrl: "/",
+      },
+      {
+        linkTitle: "Special Situations",
+        linkUrl: "/",
+      },
+      {
+        linkTitle: "Venture",
+        linkUrl: "/",
+      },
+      {
+        linkTitle: "Real Estate",
+        linkUrl: "/",
+      },
+    ]
+  },
+  {
+    linkHeading: "People",
+    links: [
+      {
+        linkTitle: "People",
+        linkUrl: "/",
+      },
+      {
+        linkTitle: "Corporate",
+        linkUrl: "/",
+      },
+      {
+        linkTitle: "Leadership",
+        linkUrl: "/",
+      },
+    ]
+  },
+  {
+    linkHeading: "Help",
+    links: [
+      {
+        linkTitle: "FAQ",
+        linkUrl: "/",
+      },
+      {
+        linkTitle: "Contact Us",
+        linkUrl: "/",
+      },
+      {
+        linkTitle: "Terms",
+        linkUrl: "/",
+      },
+      {
+        linkTitle: "Cookies",
+        linkUrl: "/",
+      },
+      {
+        linkTitle: "Privacy",
+        linkUrl: "/",
+      },
+    ]
+  },
+]
 
-export { headerNavLinks, heroSectionTitle, featureSection01, featureSection02, aboutUsSection };
+export { headerNavLinks, heroSectionTitle, featureSection01, featureSection02, aboutUsSection, footerSectionLinks };

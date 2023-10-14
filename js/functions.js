@@ -10,7 +10,7 @@ function getDynamicHeaderHeight () {
 
     let headerHeight = header.offsetHeight;
 
-    heroSection.style.top = headerHeight + "px";
+    heroSection.style.marginTop = headerHeight + "px";
 
     console.log( "header height: " + headerHeight );
 }
